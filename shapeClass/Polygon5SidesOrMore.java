@@ -1,11 +1,11 @@
-public class Pentadecagon implements Shape {
+public class Polygon5SidesOrMore implements Shape {
     private String color;
     private double sides;
     private double apothem;
     private double sideLength;
     private double angle;
-    public Pentadecagon(int theSideLength, String theColor) {
-        this.sides = 15;
+    public Polygon5SidesOrMore (double theSideLength, String theColor, int numberOfSides ) {
+        this.sides = numberOfSides;
         this.color = theColor;
         this.sideLength = theSideLength;
         this.angle = Math.toRadians(180 - (((360 / sides) / 2) + 90));
